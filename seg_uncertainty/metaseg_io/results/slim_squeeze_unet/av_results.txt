@@ -1,0 +1,43 @@
+D          -0.62675
+D_bd       -0.48414
+D_in       -0.59930
+D_rel       0.57058
+D_rel_in    0.57256
+E          -0.57202
+E_bd       -0.48710
+E_in       -0.55201
+E_rel       0.58970
+E_rel_in    0.58994
+S           0.68921
+S_bd        0.60206
+S_in        0.68941
+S_rel       0.62451
+S_rel_in    0.62451
+cprob0      0.24993
+cprob1     -0.24993
+iou         1.00000
+Name: iou, dtype: float64
+ 
+classification
+                             & train                &  val                 &    \\ 
+ACC penalized                & $86.66\%(\pm2.57\%)$ & $84.98\%(\pm1.22\%)$ &    \\ 
+ACC unpenalized              & $85.69\%(\pm2.03\%)$ & $83.87\%(\pm1.90\%)$ &    \\ 
+ACC entropy baseline         & $82.95\%(\pm2.24\%)$ & $82.56\%(\pm2.19\%)$ &    \\ 
+AUROC penalized              & $92.39\%(\pm0.72\%)$ & $91.44\%(\pm1.39\%)$ &    \\ 
+AUROC unpenalized            & $90.95\%(\pm0.81\%)$ & $90.50\%(\pm1.72\%)$ &    \\ 
+AUROC entropy baseline       & $71.86\%(\pm1.67\%)$ & $72.24\%(\pm1.84\%)$ &    \\ 
+ 
+regression
+$\sigma$, all metrics        & $0.154(\pm0.005)$    & $0.161(\pm0.006)$    &    \\ 
+$\sigma$, entropy baseline   & $0.210(\pm0.006)$    & $0.216(\pm0.006)$    &    \\ 
+$R^2$, all metrics           & $64.01\%(\pm3.12\%)$ & $61.72\%(\pm3.58\%)$ &    \\ 
+$R^2$, entropy baseline      & $32.87\%(\pm1.57\%)$ & $31.69\%(\pm1.87\%)$ &    \\ 
+ 
+iou0_found : 40($\pm$16)
+iou0_not_found : 66($\pm$16)
+not_iou0_found : 491($\pm$12)
+not_iou0_not_found : 18($\pm$12)
+IoU=0: 106 of 615 non-empty components
+IoU>0: 509 of 615 non-empty components
+total number of components:  628
+ 
